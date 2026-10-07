@@ -822,7 +822,6 @@
             width: 100%;
             height: 880px;
             margin-top: 100px;
-            border: 2px solid;
         }
 
         .header-top {
@@ -859,8 +858,6 @@
             align-items: center;
             margin: auto;
             gap: 10px;
-            border: 2px solid purple;
-            
         }
 
         .service-content>.image-side {
@@ -949,7 +946,7 @@
             height: 230px;
             display: flex;
             gap: 17px;
-            background: #ffa62b ;
+            background: #ffa62b;
         }
 
         .ctn2>.ctn-icn-2 {
@@ -995,7 +992,8 @@
             transition: all 0.2s ease-in;
             font-family: Poppins, Arial, sans-serif;
         }
-        .ctn2>.ctn-con-2>.lrn-btn-2:hover{
+
+        .ctn2>.ctn-con-2>.lrn-btn-2:hover {
             background-color: #3d424a;
             color: #fff;
             transform: translateY(-2px);
@@ -1010,13 +1008,16 @@
             background: #fff;
             transition: all 0.3s ease-in;
         }
-        .ctn3:hover{
+
+        .ctn3:hover {
             background-color: #3d424a;
         }
-        .ctn3:hover .ctn-con-3>h3{
+
+        .ctn3:hover .ctn-con-3>h3 {
             color: #fff;
         }
-        .ctn3:hover .ctn-con-3>p{
+
+        .ctn3:hover .ctn-con-3>p {
             color: #fff;
         }
 
@@ -1063,34 +1064,142 @@
             transition: all 0.2s ease-in;
             font-family: Poppins, Arial, sans-serif;
         }
-        .further-area{
-            border: 2px solid blue;
+
+        .further-area {
             width: 100%;
             height: 500px;
-            margin-top: 100px;
+            margin-top: 100px;            
         }
-        .further-area>.f-cont{
-            border: 2px solid brown;
+
+        .further-area>.f-cont {
             width: 85%;
             height: 100%;
             margin: auto;
             display: flex;
+            gap: 10px;
+            
         }
-         .f-cont>.for-img{
-            border: 3px solid lightskyblue;
+
+        .f-cont>.for-img {
             width: 50%;
-            height: 80%;    
+            height: 80%;
             margin: auto;
             background-image: url(/image/bg_3.jpg);
             background-position: center;
             background-size: cover;
             background-repeat: no-repeat;
-         }
-         .f-cont>.for-cont{
-            border: 2px solid;
-             width: 50%;
+        }
+
+        .f-cont>.for-cont {
+            width: 50%;
             height: 100%;
+            padding: 20px 40px;
+            display: flex;
+            flex-direction: column;
+            gap: 22px;
+
+        }
+
+        .for-cont>.for-lit-con {
+            display: inline-flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+
+        .for-lit-con>span {
+            color: #6e6e6e;
+            font-family: Poppins, Arial, sans-serif;
+            font-size: 14px;
+        }
+        .for-lit-con> h3{
+            font-weight: 400;
+            font-size: 32px;
+            font-family: Poppins, Arial, sans-serif;
+        }
+        .for-lit-con> p{
+            font-size: 15px;
+            font-weight: 400;
+            letter-spacing: 0.4px;
+            margin-top: 15px;
+            color: #6e6e6e;
+            font-family: Poppins, Arial, sans-serif;
+        }
+
+        .for-cont-tick {  
+            margin-top: 10px;
+            height: 200px;
+            display: flex;
+            flex-direction: column;
+            gap: 11px;
+            font-family: Poppins, Arial, sans-serif;
+        }
+         .for-cont-tick>.tick-1{
+
+            display: flex;
+            align-items: center;
+            gap: 10px;            
          }
+         .tick-1>i{
+            color: #ffa62b;
+         }
+         .tick-1>span{
+            color: #6e6e6e;
+         }
+         .for-cont-tick>.tick-2{
+
+            display: flex;
+            align-items: center;
+            gap: 10px;            
+         }
+         .tick-2>i{
+            color: #ffa62b;
+         }
+         .tick-2>span{
+            color: #6e6e6e;
+         }
+         .for-cont-tick>.tick-3{
+            display: flex;
+            align-items: center;
+            gap: 10px;            
+         }
+         .tick-3>i{
+            color: #ffa62b;
+         }
+         .tick-3>span{
+            color: #6e6e6e;
+         }
+         .for-cont-tick>.tick-4{
+            display: flex;
+            align-items: center;
+            gap: 10px;            
+         }
+         .tick-4>i{
+            color: #ffa62b;
+         }
+         .tick-4>span{
+            color: #6e6e6e;
+         }
+          .for-cont-tick>.btn{
+            margin-top: 16px;
+            background: #ffa62b !important; 
+            border: 1px solid #ffa62b !important;
+            align-self: flex-start;
+            padding: 10px 20px;
+            box-shadow: 0 24px 36px -11px #00000017;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #3d424a;
+            font-family: Poppins, Arial, sans-serif;
+            
+          }
+          .btn>a{
+            text-decoration: none;
+            font-weight: 500;
+
+            
+           
+          }
     </style>
 </head>
 
@@ -1337,14 +1446,17 @@
         </section>
 
         <div class="further-area">
-             <div class="f-cont">
+            <div class="f-cont">
                 <div class="for-img">
 
                 </div>
                 <div class="for-cont">
-                    <span>Watch Our story</span>
-                    <h3>Building Dream Into Reality Since 1982</h3>
-                    <p>See how we transform vision into structure that stand test time. Our team of experts bring togather inovation, quality and dedication in every project we undertake</p>
+                    <div class="for-lit-con">
+                        <span>Watch Our story</span>
+                        <h3>Building Dream Into Reality Since 1982</h3>
+                        <p>See how we transform vision into structure that stand test time. Our team of experts bring
+                            togather inovation, quality and dedication in every project we undertake</p>
+                    </div>
                     <div class="for-cont-tick">
                         <div class="tick-1">
                             <i class="fa-solid fa-check"></i>
@@ -1367,8 +1479,8 @@
                         </div>
                     </div>
                 </div>
-             </div>
             </div>
+        </div>
         </div>
     </main>
 </body>

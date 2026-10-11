@@ -19,7 +19,7 @@
 
         body {
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-            background-color: #fceeee;
+            background-color: #f2f1f1;
         }
 
         header {
@@ -1264,6 +1264,7 @@
             line-height: 1.4;
             font-weight: 400;
         }
+
         .stuff-team {
             height: 700px;
             width: 100%;
@@ -1388,66 +1389,78 @@
             text-decoration: none;
             color: #fafafa;
         }
+
         .staff-card:hover .socials>li {
             transform: translateX(0);
             opacity: 1;
         }
+
         .socials>li:hover {
             background-color: #ffa62b;
         }
-        .project{
+
+        .project {
             margin-top: 150px;
             width: 100%;
-            height: 700px;
+            height: 800px;
         }
-         .project>.size-project{
+
+        .project>.size-project {
             width: 100%;
             height: 100%;
             display: flex;
             flex-direction: column;
             gap: 90px;
-            
-         }
-          .project>.size-project>.on-top-proj{
+
+        }
+
+        .project>.size-project>.on-top-proj {
             height: 15%;
-          }
-          .on-top-proj>span{
+        }
+
+        .on-top-proj>span {
             text-align: center;
             display: block;
             font-family: Poppins, Arial, sans-serif;
             font-size: 16px;
             font-weight: 600;
             color: #a66000;
-          }
-          .on-top-proj>h2{
+        }
+
+        .on-top-proj>h2 {
             font-size: 46px;
             font-weight: 400;
             text-align: center;
             line-height: 1.4;
             font-family: Poppins, Arial, sans-serif;
             color: #3d424a;
-          }
-          .size-project>.project-images{
+        }
+
+        .size-project>.project-images {
             width: 100%;
             display: grid;
             grid-template-columns: repeat(3, 1fr);
             grid-auto-rows: 300px;
-          }
-          .proj-img{
+        }
+
+        .proj-img {
             position: relative;
             overflow: hidden;
-          }
-           .proj-img>.proj-overlay{
+        }
+
+        .proj-img>.proj-overlay {
             background: linear-gradient(to top, rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.2));
-            opacity: 0;  
+            opacity: 0;
             position: absolute;
             inset: 0;
             transition: all 0.3s ease-in;
-           }
-           .proj-img:hover .proj-overlay{
+        }
+
+        .proj-img:hover .proj-overlay {
             opacity: 1;
-           }
-           .proj-overlay>.proj-search{
+        }
+
+        .proj-overlay>.proj-search {
             position: absolute;
             top: 5px;
             right: 5px;
@@ -1461,8 +1474,9 @@
             color: #fff;
             border-radius: 5px;
             font-size: 12px;
-           }
-           .proj-overlay>span{
+        }
+
+        .proj-overlay>span {
             position: absolute;
             bottom: 17%;
             left: 15px;
@@ -1471,8 +1485,9 @@
             text-transform: uppercase;
             letter-spacing: -1px;
             color: #fff;
-           }
-           .proj-overlay>h3{
+        }
+
+        .proj-overlay>h3 {
             position: absolute;
             bottom: 10px;
             left: 15px;
@@ -1481,17 +1496,427 @@
             text-transform: uppercase;
             line-height: 1.4;
             color: #fff;
-           }
-          .project-images>.proj-img>img{
+        }
+
+        .project-images>.proj-img>img {
             border: 1px solid;
             width: 100%;
             height: 300px;
             object-fit: cover;
             border: none;
             display: block;
-          }
-          
+        }
 
+        .pricing {
+            width: 100%;
+            height: 850px;
+            margin-top: 150px;
+        }
+
+        .pricing-sec {
+            width: 98%;
+            height: 100%;
+            margin: auto;
+
+        }
+
+        .price-top-sec {
+            width: 100%;
+            height: 22%;
+        }
+
+        .price-top-sec>span {
+            display: block;
+            text-align: center;
+            font-weight: 700;
+            color: #a66000;
+            margin: 10px;
+            font-size: 16px;
+            letter-spacing: -0.7px;
+        }
+
+        .price-top-sec>h2 {
+            text-align: center;
+            line-height: 1.4;
+            margin: 5px;
+            font-size: 46px;
+            font-weight: 400;
+            color: #3d424a;
+            letter-spacing: -2px;
+            font-family: Poppins, Arial, sans-serif;
+        }
+
+        .pricing-sec>.price-card {
+            width: 100%;
+            height: 75%;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .price-card>.card-1 {
+            width: 24%;
+            height: 85%;
+            background-color: #f8f9fa;
+        }
+
+        .card-1>.price-first>h5 {
+            padding: 1px;
+            margin-top: 25px;
+            text-align: center;
+            text-transform: uppercase;
+            font-size: 16px;
+            letter-spacing: -0.1px;
+            font-weight: 700;
+            font-family: Poppins, Arial, sans-serif;
+            color: #3d424a;
+        }
+
+        .card-1>.price-first>.hh2 {
+            text-align: center;
+            font-weight: 700;
+            font-size: 40px;
+            color: #a66000;
+            margin-top: 5px;
+            font-family: Poppins, Arial, sans-serif;
+        }
+
+        .hh2>.currency {
+            font-family: Poppins, Arial, sans-serif;
+            vertical-align: top;
+            font-weight: 600;
+            font-size: 18px;
+            margin-right: -5px;
+            color: #a66000;
+        }
+
+        .price-first>span {
+            font-family: Poppins, Arial, sans-serif;
+            display: block;
+            text-align: center;
+            margin-top: 7px;
+            font-size: 14px;
+            color: #6e6e6e;
+        }
+
+        .list-price>ul {
+            /* border: 1px solid; */
+            margin-top: 40px;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .list-price>ul>li {
+            list-style: none;
+            width: 100%;
+            color: #6e6e6e;
+            font-family: Poppins, Arial, sans-serif;
+            text-align: start;
+            border-bottom: 1px solid;
+            margin: 3px;
+            padding-bottom: 5px;
+            font-size: 14px;
+        }
+
+        .list-price>ul>li:nth-child(6) {
+            border: none;
+        }
+
+        .list-price>ul>li>span {
+            margin: 10px;
+            color: #ffa62b;
+        }
+
+        .btn-quote {
+            background-color: #ffa62b;
+            color: #3d424a ;
+            font-weight: 600;
+            letter-spacing: 1px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 40px;
+            text-decoration: none;
+            text-transform: uppercase;
+            margin: 10px auto;
+            font-family: Poppins, Arial, sans-serif;
+            width: 60%;
+            border: none;
+            font-size: 15px;
+            transition: all 0.3s ease-in;
+        }
+        .btn-quote:hover{
+            background-color: #fff;
+            color: #363b42;
+            transform: scaleX(1.1);
+        }
+        .happy-client {
+            width: 100%;
+            height: 600px;
+            margin-top: 150px;
+            /* border: 1px solid red; */
+        }
+
+        .happy-sec {
+            width: 95%;
+            height: 100%;
+            margin: auto;
+        }
+
+        .happy-top {
+            width: 100%;
+            height: 22%;
+        }
+
+        .happy-top>span {
+            display: block;
+            text-align: center;
+            font-weight: 700;
+            color: #a66000;
+            margin: 10px;
+            font-size: 16px;
+            font-family: Poppins, Arial, sans-serif;
+        }
+
+        .happy-top>h2 {
+            text-align: center;
+            line-height: 1.4;
+            font-size: 46px;
+            font-weight: 400;
+            color: #3d424a;
+            font-family: Poppins, Arial, sans-serif;
+        }
+
+        .happy-card-row {
+            margin-top: 30px;
+            width: 100%;
+            height: 60%;
+            display: flex;
+            gap: 20px;
+        }
+
+        .happy-card {
+            width: 33%;
+            height: 100%;
+            background-color: #fff;
+            padding: 40px;
+            transition: all 0.3s ease-in;
+        }
+
+        .happy-card:hover {
+            background-color: #ffa62b;
+        }
+
+        .happy-profile {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .happy-img {
+            width: 108px;
+            height: 108px;
+            position: relative;
+        }
+
+        .happy-img>img {
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+
+        .happy-quote {
+            position: absolute;
+            bottom: 0px;
+            right: 0px;
+            width: 38px;
+            height: 38px;
+            border-radius: 50%;
+            background-color: #ffa62b;
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 14px;
+            transition: all 0.3s ease-in;
+        }
+
+        .happy-card:hover .happy-quote {
+            background-color: #fff;
+            color: #ffa62b;
+        }
+
+        .happy-name>h3 {
+            font-size: 20px;
+            font-weight: 600;
+            text-transform: uppercase;
+            color: #3d424a;
+            font-family: Poppins, Arial, sans-serif;
+        }
+
+        .happy-name>span {
+            display: block;
+            margin-top: 6px;
+            font-size: 13px;
+            text-transform: uppercase;
+            color: #a66000;
+            font-family: Poppins, Arial, sans-serif;
+        }
+
+        .happy-card>p {
+            margin-top: 30px;
+            font-size: 16px;
+            line-height: 2;
+            color: #6e6e6e;
+            font-family: Poppins, Arial, sans-serif;
+            transition: all 0.3s ease-in;
+        }
+
+        .happy-card:hover>p {
+            color: #a66000;
+        }
+
+        .happy-lines {
+            display: flex;
+            justify-content: center;
+            gap: 12px;
+            margin-top: 40px;
+        }
+
+        .happy-lines>span {
+            width: 40px;
+            height: 3px;
+            background-color: #ddd;
+        }
+
+        .happy-lines>.active {
+            background-color: #ffa62b;
+        }
+
+        .blog {
+            width: 100%;
+            height: 700px;
+            margin-top: 150px;
+        }
+
+        .blog-sec {
+            width: 90%;
+            height: 100%;
+            margin: auto;
+        }
+
+        .blog-top {
+            width: 100%;
+            height: 22%;
+        }
+
+        .blog-top>span {
+            display: block;
+            text-align: center;
+            font-weight: 700;
+            color: #a66000;
+            margin: 10px;
+            font-size: 16px;
+            font-family: Poppins, Arial, sans-serif;
+        }
+
+        .blog-top>h2 {
+            text-align: center;
+            line-height: 1.4;
+            font-size: 46px;
+            font-weight: 400;
+            color: #3d424a;
+            font-family: Poppins, Arial, sans-serif;
+        }
+
+        .blog-card-row {
+            width: 100%;
+            height: 70%;
+            display: flex;
+            gap: 18px;
+        }
+
+        .blog-card {
+            width: 33%;
+            height: 100%;
+            background-color: #fff;
+            box-shadow: 0 24px 36px -11px #00000017;
+        }
+
+        .blog-img {
+            height: 225px;
+            position: relative;
+        }
+
+        .blog-img>img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+
+        .blog-date {
+            position: absolute;
+            bottom: 0px;
+            left: 18px;
+            width: 52px;
+            height: 70px;
+            background-color: #3d424a;
+            color: #fff;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            font-family: Poppins, Arial, sans-serif;
+        }
+
+        .blog-date>h4 {
+            font-size: 24px;
+            font-weight: 400;
+        }
+
+        .blog-date>span {
+            font-size: 11px;
+            text-transform: uppercase;
+        }
+
+        .blog-info {
+            padding: 22px;
+        }
+
+        .blog-meta {
+            display: flex;
+            gap: 14px;
+            font-size: 11px;
+            font-weight: 700;
+            text-transform: uppercase;
+            color: #6e6e6e;
+            font-family: Poppins, Arial, sans-serif;
+        }
+
+        .blog-meta>span>i {
+            color: #ffa62b;
+            margin-right: 5px;
+        }
+
+        .blog-info>h3 {
+            margin-top: 18px;
+            font-size: 20px;
+            font-weight: 400;
+            line-height: 1.4;
+            color: #000;
+            font-family: Poppins, Arial, sans-serif;
+        }
+
+        .blog-info>p {
+            margin-top: 15px;
+            font-size: 13px;
+            line-height: 1.9;
+            color: #6e6e6e;
+            font-family: Poppins, Arial, sans-serif;
+        }
     </style>
 </head>
 
@@ -1882,64 +2307,282 @@
                 </div>
             </div>
         </section>
+        <section class="project">
+            <div class="size-project">
+                <div class="on-top-proj">
+                    <span>Protfolio</span>
+                    <h2>Projects</h2>
+                </div>
+                <div class="project-images">
+                    <div class="proj-img">
+                        <img src="image/work-1.jpg" alt="worker1">
+                        <div class="proj-overlay">
+                            <a href="#" class="proj-search"><i class="fa-solid fa-magnifying-glass"></i></a>
+                            <span>Building</span>
+                            <h3>high tower works</h3>
+                        </div>
+                    </div>
+                    <div class="proj-img">
+                        <img src="image/work-2.jpg" alt="">
+                        <div class="proj-overlay">
+                            <a href="#" class="proj-search"><i class="fa-solid fa-magnifying-glass"></i></a>
+                            <span>Building</span>
+                            <h3>high tower works</h3>
+                        </div>
+                    </div>
+                    <div class="proj-img">
+                        <img src="image/work-3.jpg" alt="">
+                        <div class="proj-overlay">
+                            <a href="#" class="proj-search"><i class="fa-solid fa-magnifying-glass"></i></a>
+                            <span>Building</span>
+                            <h3>high tower works</h3>
+                        </div>
+                    </div>
+                    <div class="proj-img">
+                        <img src="image/work-4.jpg" alt="">
+                        <div class="proj-overlay">
+                            <a href="#" class="proj-search"><i class="fa-solid fa-magnifying-glass"></i></a>
+                            <span>Building</span>
+                            <h3>high tower works</h3>
+                        </div>
+                    </div>
+                    <div class="proj-img">
+                        <img src="image/work-5.jpg" alt="">
+                        <div class="proj-overlay">
+                            <a href="#" class="proj-search"><i class="fa-solid fa-magnifying-glass"></i></a>
+                            <span>Building</span>
+                            <h3>high tower works</h3>
+                        </div>
+                    </div>
+                    <div class="proj-img">
+                        <img src="image/work-6.jpg" alt="">
+                        <div class="proj-overlay">
+                            <a href="#" class="proj-search"><i class="fa-solid fa-magnifying-glass"></i></a>
+                            <span>Building</span>
+                            <h3>high tower works</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="pricing">
+            <div class="pricing-sec">
+                <div class="price-top-sec">
+                    <span>Our pricing</span>
+                    <h2>pricing & packages</h2>
+                </div>
+
+                <div class="price-card">
+                    <div class="card-1">
+                        <div class="price-first">
+                            <h5>basic</h5>
+                            <div class="hh2">
+                                <span class="currency">$</span>
+                                49k
+                            </div>
+                            <span>small renovations</span>
+                        </div>
+                        <div class="list-price">
+                            <ul>
+                                <li><span><i class="fa-solid fa-check"></i></span>up to 500 sq ft</li>
+                                <li><span><i class="fa-solid fa-check"></i></span>Basic materials</li>
+                                <li><span><i class="fa-solid fa-check"></i></span>2-week-timeline</li>
+                                <li><span><i class="fa-solid fa-check"></i></span>1-year warranty</li>
+                                <li><span><i class="fa-solid fa-x"></i></span><del>Design consultation</del></li>
+                                <li><span><i class="fa-solid fa-x"></i></span><del>Project manager<del></del></li>
+                            </ul>
+                        </div>
+                        <a href="#" class="btn-quote">get quote</a>
+                    </div>
+                    <div class="card-1">
+                        <div class="price-first">
+                            <h5>standard</h5>
+                            <div class="hh2">
+                                <span class="currency">$</span>
+                                79k
+                            </div>
+                            <span>Home additions</span>
+                        </div>
+                        <div class="list-price">
+                            <ul>
+                                <li><span><i class="fa-solid fa-check"></i></span>up to 1,000 sq ft</li>
+                                <li><span><i class="fa-solid fa-check"></i></span>Quality materials</li>
+                                <li><span><i class="fa-solid fa-check"></i></span>4-week-timeline</li>
+                                <li><span><i class="fa-solid fa-check"></i></span>2-year warranty</li>
+                                <li><span><i class="fa-solid fa-check"></i></span>Design consultation</li>
+                                <li><span><i class="fa-solid fa-x"></i></span><del>Project manager</del></li>
+                            </ul>
+                        </div>
+                        <a href="#" class="btn-quote">get quote</a>
+                    </div>
+                    <div class="card-1">
+                        <div class="price-first">
+                            <h5>premium</h5>
+                            <div class="hh2">
+                                <span class="currency">$</span>
+                                109k
+                            </div>
+                            <span>Full home builds</span>
+                        </div>
+                        <div class="list-price">
+                            <ul>
+                                <li><span><i class="fa-solid fa-check"></i></span>up to 2,500 sq ft</li>
+                                <li><span><i class="fa-solid fa-check"></i></span>premium materials</li>
+                                <li><span><i class="fa-solid fa-check"></i></span>8-week-timeline</li>
+                                <li><span><i class="fa-solid fa-check"></i></span>5-year warranty</li>
+                                <li><span><i class="fa-solid fa-check"></i></span>Design consultation</li>
+                                <li><span><i class="fa-solid fa-check"></i></span>Dedicated project manager</li>
+                            </ul>
+                        </div>
+                        <a href="#" class="btn-quote">get quote</a>
+                    </div>
+                    <div class="card-1">
+                        <div class="price-first">
+                            <h5>Enterprise</h5>
+                            <div class="hh2">
+                                <span class="currency">$</span>
+                                149k+
+                            </div>
+                            <span>Commercial projects</span>
+                        </div>
+                        <div class="list-price">
+                            <ul>
+                                <li><span><i class="fa-solid fa-check"></i></span>unlimited sq ft</li>
+                                <li><span><i class="fa-solid fa-check"></i></span>Custom materials</li>
+                                <li><span><i class="fa-solid fa-check"></i></span>Custom-timeline</li>
+                                <li><span><i class="fa-solid fa-check"></i></span>10-year warranty</li>
+                                <li><span><i class="fa-solid fa-check"></i></span>Full design team</li>
+                                <li><span><i class="fa-solid fa-check"></i></span>24/7 support  </li>
+                            </ul>
+                        </div>
+                        <a href="#" class="btn-quote">contact us</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="happy-client">
+            <div class="happy-sec">
+                <div class="happy-top">
+                    <span>Testimonial</span>
+                    <h2>Happy Clients</h2>
+                </div>
+                <div class="happy-card-row">
+                    <div class="happy-card">
+                        <div class="happy-profile">
+                            <div class="happy-img">
+                                <img src="image/person_1.jpg" alt="client1">
+                                <div class="happy-quote">
+                                    <i class="fa-solid fa-quote-left"></i>
+                                </div>
+                            </div>
+                            <div class="happy-name">
+                                <h3>Roger Scott</h3>
+                                <span>Marketing Manager</span>
+                            </div>
+                        </div>
+                        <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia,
+                            there live the blind texts.</p>
+                    </div>
+                    <div class="happy-card">
+                        <div class="happy-profile">
+                            <div class="happy-img">
+                                <img src="image/person_2.jpg" alt="client2">
+                                <div class="happy-quote">
+                                    <i class="fa-solid fa-quote-left"></i>
+                                </div>
+                            </div>
+                            <div class="happy-name">
+                                <h3>Roger Scott</h3>
+                                <span>Marketing Manager</span>
+                            </div>
+                        </div>
+                        <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia,
+                            there live the blind texts.</p>
+                    </div>
+                    <div class="happy-card">
+                        <div class="happy-profile">
+                            <div class="happy-img">
+                                <img src="image/person_3.jpg" alt="client3">
+                                <div class="happy-quote">
+                                    <i class="fa-solid fa-quote-left"></i>
+                                </div>
+                            </div>
+                            <div class="happy-name">
+                                <h3>Roger Scott</h3>
+                                <span>Marketing Manager</span>
+                            </div>
+                        </div>
+                        <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia,
+                            there live the blind texts.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="blog">
+            <div class="blog-sec">
+                <div class="blog-top">
+                    <span>Our Blog</span>
+                    <h2>Recent Blog</h2>
+                </div>
+                <div class="blog-card-row">
+                    <div class="blog-card">
+                        <div class="blog-img">
+                            <img src="image/image_1.jpg" alt="blog1">
+                            <div class="blog-date">
+                                <h4>16</h4>
+                                <span>Jan</span>
+                            </div>
+                        </div>
+                        <div class="blog-info">
+                            <div class="blog-meta">
+                                <span><i class="fa-solid fa-user"></i>Admin</span>
+                                <span><i class="fa-solid fa-comment"></i>3 Comments</span>
+                            </div>
+                            <h3>Biggest Construction in New York, USA</h3>
+                            <p>A small river named Duden flows by their place and supplies it with the necessary
+                                regelialia.</p>
+                        </div>
+                    </div>
+                    <div class="blog-card">
+                        <div class="blog-img">
+                            <img src="image/image_2.jpg" alt="blog2">
+                            <div class="blog-date">
+                                <h4>16</h4>
+                                <span>Jan</span>
+                            </div>
+                        </div>
+                        <div class="blog-info">
+                            <div class="blog-meta">
+                                <span><i class="fa-solid fa-user"></i>Admin</span>
+                                <span><i class="fa-solid fa-comment"></i>3 Comments</span>
+                            </div>
+                            <h3>Biggest Construction in New York, USA</h3>
+                            <p>A small river named Duden flows by their place and supplies it with the necessary
+                                regelialia.</p>
+                        </div>
+                    </div>
+                    <div class="blog-card">
+                        <div class="blog-img">
+                            <img src="image/image_3.jpg" alt="blog3">
+                            <div class="blog-date">
+                                <h4>16</h4>
+                                <span>Jan</span>
+                            </div>
+                        </div>
+                        <div class="blog-info">
+                            <div class="blog-meta">
+                                <span><i class="fa-solid fa-user"></i>Admin</span>
+                                <span><i class="fa-solid fa-comment"></i>3 Comments</span>
+                            </div>
+                            <h3>Biggest Construction in New York, USA</h3>
+                            <p>A small river named Duden flows by their place and supplies it with the necessary
+                                regelialia.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
-    <section class="project">
-        <div class="size-project">
-            <div class="on-top-proj">
-                <span>Protfolio</span>
-                <h2>Projects</h2>
-            </div>
-            <div class="project-images">
-                <div class="proj-img">
-                    <img src="image/work-1.jpg" alt="worker1">
-                    <div class="proj-overlay">
-                        <a href="#" class="proj-search"><i class="fa-solid fa-magnifying-glass"></i></a>
-                        <span>Building</span>
-                        <h3>high tower works</h3>
-                    </div>
-                </div>
-                <div class="proj-img">
-                    <img src="image/work-2.jpg" alt="">
-                    <div class="proj-overlay">
-                        <a href="#" class="proj-search"><i class="fa-solid fa-magnifying-glass"></i></a>
-                        <span>Building</span>
-                        <h3>high tower works</h3>
-                    </div>
-                </div>
-                <div class="proj-img">
-                    <img src="image/work-3.jpg" alt="">
-                    <div class="proj-overlay">
-                        <a href="#" class="proj-search"><i class="fa-solid fa-magnifying-glass"></i></a>
-                        <span>Building</span>
-                        <h3>high tower works</h3>
-                    </div>
-                </div>
-                <div class="proj-img">
-                    <img src="image/work-4.jpg" alt="">
-                    <div class="proj-overlay">
-                        <a href="#" class="proj-search"><i class="fa-solid fa-magnifying-glass"></i></a>
-                        <span>Building</span>
-                        <h3>high tower works</h3>
-                    </div>
-                </div>
-                <div class="proj-img">
-                    <img src="image/work-5.jpg" alt="">
-                    <div class="proj-overlay">
-                        <a href="#" class="proj-search"><i class="fa-solid fa-magnifying-glass"></i></a>
-                        <span>Building</span>
-                        <h3>high tower works</h3>
-                    </div>
-                </div>
-                <div class="proj-img">
-                    <img src="image/work-6.jpg" alt="">
-                    <div class="proj-overlay">
-                        <a href="#" class="proj-search"><i class="fa-solid fa-magnifying-glass"></i></a>
-                        <span>Building</span>
-                        <h3>high tower works</h3>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
 </body>
+
 </html>

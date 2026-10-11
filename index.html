@@ -1264,23 +1264,20 @@
             line-height: 1.4;
             font-weight: 400;
         }
-
         .stuff-team {
-            border: 3px solid fuchsia;
-            height: 500px;
+            height: 700px;
             width: 100%;
             margin-top: 150px;
+            padding: 0px 1px;
         }
 
         .stuff-container {
             height: 100%;
-            width: 80%;
-            border: 2px solid salmon;
+            width: 95%;
             margin: auto;
         }
 
         .content-stuff {
-            border: 3px solid palegoldenrod;
             height: 25%;
         }
 
@@ -1301,9 +1298,102 @@
             text-align: center;
             margin-bottom: 40px;
         }
-        .content-stuff-2{
-            border: 3px solid blue;
-            height: 80%;
+
+        .content-stuff-2 {
+            height: 75%;
+            display: flex;
+            gap: 15px;
+        }
+
+        .staff-card {
+            width: 25%;
+            height: 100%;
+            background-color: #fafafa;
+            position: relative;
+            overflow: hidden;
+            transition: background-color 0.3s ease-in;
+        }
+
+        .staff-card:hover {
+            background-color: #ffa62b;
+            color: #fff;
+        }
+
+        .staff-img {
+            height: 82%;
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        .staff-img-1 {
+            background-image: url(/image/staff-1.jpg);
+        }
+
+        .staff-img-2 {
+            background-image: url(/image/staff-2.jpg);
+        }
+
+        .staff-img-3 {
+            background-image: url(/image/staff-3.jpg);
+        }
+
+        .staff-img-4 {
+            background-image: url(/image/staff-4.jpg);
+        }
+
+        .staff-info {
+            text-align: center;
+            margin-top: 12px;
+        }
+
+        .staff-info h3 {
+            font-size: 20px;
+            font-weight: 500;
+            color: #3d424a;
+        }
+
+        .staff-info span {
+            font-family: Poppins, Arial, sans-serif;
+            text-transform: uppercase;
+            font-size: 14px;
+        }
+
+        .socials {
+            position: absolute;
+            top: 45%;
+            left: 15px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .socials>li {
+            list-style: none;
+            height: 35px;
+            width: 35px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #3d424a;
+            opacity: 0;
+            transform: translateX(-200%);
+            transition: transform 0.4s ease, opacity 0.4s ease, background-color 0.3s;
+        }
+
+        .socials>li>a {
+            text-decoration: none;
+            color: #fafafa;
+        }
+
+        /* Hover par icons andar aayein */
+        .staff-card:hover .socials>li {
+            transform: translateX(0);
+            opacity: 1;
+        }
+        .socials>li:hover {
+            background-color: #ffa62b;
         }
     </style>
 </head>
@@ -1586,7 +1676,6 @@
                 </div>
             </div>
         </div>
-        </div>
 
         <div class="box-width">
             <div class="box-width-icon">
@@ -1628,6 +1717,7 @@
                 </div>
             </div>
         </div>
+
         <section class="stuff-team">
             <div class="stuff-container">
                 <div class="content-stuff">
@@ -1635,14 +1725,65 @@
                     <h2>Qualified Engineers</h2>
                 </div>
                 <div class="content-stuff-2">
-                    <div class="stuff-1"></div>
-                    <div class="stuff-1"></div>
-                    <div class="stuff-1"></div>
-                    <div class="stuff-1"></div>
+
+                    <div class="staff-card">
+                        <div class="staff-img staff-img-1"></div>
+                        <ul class="socials">
+                            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                            <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                        </ul>
+                        <div class="staff-info">
+                            <h3>Lionel Wurtchbach</h3>
+                            <span>senior engineer</span>
+                        </div>
+                    </div>
+
+                    <div class="staff-card">
+                        <div class="staff-img staff-img-2"></div>
+                        <ul class="socials">
+                            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                            <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                        </ul>
+                        <div class="staff-info">
+                            <h3>Lionel Wurtchbach</h3>
+                            <span>senior engineer</span>
+                        </div>
+                    </div>
+
+                    <div class="staff-card">
+                        <div class="staff-img staff-img-3"></div>
+                        <ul class="socials">
+                            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                            <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                        </ul>
+                        <div class="staff-info">
+                            <h3>Lionel Wurtchbach</h3>
+                            <span>senior engineer</span>
+                        </div>
+                    </div>
+
+                    <div class="staff-card">
+                        <div class="staff-img staff-img-4"></div>
+                        <ul class="socials">
+                            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                            <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                        </ul>
+                        <div class="staff-info">
+                            <h3>Lionel Wurtchbach</h3>
+                            <span>senior engineer</span>
+                        </div>
+                    </div>
 
                 </div>
             </div>
-
         </section>
     </main>
 </body>

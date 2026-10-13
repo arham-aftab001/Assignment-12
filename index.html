@@ -1630,7 +1630,7 @@
 
         .btn-quote {
             background-color: #ffa62b;
-            color: #3d424a ;
+            color: #3d424a;
             font-weight: 600;
             letter-spacing: 1px;
             display: flex;
@@ -1646,11 +1646,13 @@
             font-size: 15px;
             transition: all 0.3s ease-in;
         }
-        .btn-quote:hover{
+
+        .btn-quote:hover {
             background-color: #fff;
             color: #363b42;
             transform: scaleX(1.1);
         }
+
         .happy-client {
             width: 100%;
             height: 600px;
@@ -1916,6 +1918,443 @@
             line-height: 1.9;
             color: #6e6e6e;
             font-family: Poppins, Arial, sans-serif;
+        }
+
+
+
+        .form {
+            width: 100%;
+            min-height: 760px;
+            display: flex;
+            background-color: #fff;
+        }
+
+        .form>.form-area {
+            width: 50%;
+            padding: 60px 50px 60px 18%;
+        }
+
+        .form>.form-content-area {
+            width: 50%;
+            padding: 60px 18% 60px 50px;
+            background: linear-gradient(rgba(255, 255, 255, 0.88), rgba(255, 255, 255, 0.88)), url(image/bg_5.jpg);
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        /* ---- form ---- */
+        .form-top {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+
+        .form-top>span {
+            color: #a66000;
+            text-transform: uppercase;
+            font-size: 13px;
+            font-family: Poppins, Arial, sans-serif;
+        }
+
+        .form-top>h2 {
+            font-size: 24px;
+            font-weight: 700;
+            color: #000;
+            font-family: Poppins, Arial, sans-serif;
+        }
+
+        .form-area>form {
+            margin-top: 35px;
+        }
+
+        .form-area>form label {
+            display: block;
+            margin-bottom: 8px;
+            font-size: 12px;
+            font-weight: 700;
+            text-transform: uppercase;
+            color: #000;
+            font-family: Poppins, Arial, sans-serif;
+        }
+
+        .form-area>form input,
+        .form-area>form select,
+        .form-area>form textarea {
+            width: 100%;
+            border: 1px solid #e3e3e3;
+            padding: 0px 14px;
+            font-size: 13px;
+            color: #6e6e6e;
+            background-color: #fff;
+            outline: none;
+            font-family: Poppins, Arial, sans-serif;
+        }
+
+        .form-area>form input,
+        .form-area>form select {
+            height: 48px;
+        }
+
+        .form-area>form textarea {
+            height: 190px;
+            padding-top: 14px;
+            resize: vertical;
+        }
+
+        .form-area>form input:focus,
+        .form-area>form select:focus,
+        .form-area>form textarea:focus {
+            border-color: #ffa62b;
+        }
+
+        .formctnt {
+            display: flex;
+            gap: 20px;
+        }
+
+        .formctnt>.form-t {
+            width: 50%;
+        }
+
+        .formctnt>.form-f {
+            width: 50%;
+        }
+
+        .form-sub {
+            margin-top: 22px;
+        }
+
+        .form-msg {
+            margin-top: 22px;
+        }
+
+        .form-btn {
+            margin-top: 28px;
+            padding: 15px 24px;
+            border: none;
+            background-color: #ffa62b;
+            color: #3d424a;
+            font-size: 12px;
+            font-weight: 700;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            cursor: pointer;
+            box-shadow: 0 24px 36px -11px #00000017;
+            font-family: Poppins, Arial, sans-serif;
+            transition: all 0.3s ease-in;
+        }
+
+        .form-btn:hover {
+            background-color: #3d424a;
+            color: #fff;
+        }
+        .form-content-area>span {
+            display: block;
+            color: #a66000;
+            font-size: 14px;
+            font-weight: 700;
+            font-family: Poppins, Arial, sans-serif;
+        }
+
+        .form-content-area>h2 {
+            margin-top: 10px;
+            font-size: 46px;
+            font-weight: 400;
+            line-height: 1.3;
+            color: #3d424a;
+            font-family: Poppins, Arial, sans-serif;
+        }
+
+        .form-content-area>p {
+            margin-top: 20px;
+            font-size: 14px;
+            line-height: 1.9;
+            color: #6e6e6e;
+            font-family: Poppins, Arial, sans-serif;
+        }
+
+        .faq-list {
+            margin-top: 25px;
+        }
+
+        .faq-list>details {
+            background-color: #fff;
+            border: 1px solid #e5e5e5;
+        }
+
+        .faq-list>details>summary {
+            list-style: none;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 16px 20px;
+            font-size: 14px;
+            font-weight: 600;
+            color: #3d424a;
+            cursor: pointer;
+            font-family: Poppins, Arial, sans-serif;
+        }
+
+        /* browser ka default teer (arrow) chhupane ke liye */
+        .faq-list>details>summary::-webkit-details-marker {
+            display: none;
+        }
+
+        .faq-list>details[open]>summary {
+            background-color: #ffa62b;
+        }
+
+        .faq-list>details>summary>i {
+            font-size: 12px;
+            transition: transform 0.3s ease;
+        }
+
+        .faq-list>details[open]>summary>i {
+            transform: rotate(180deg);
+        }
+
+        .faq-list>details>p {
+            padding: 25px 20px;
+            font-size: 13px;
+            line-height: 1.9;
+            color: #3d424a;
+            font-family: Poppins, Arial, sans-serif;
+        }
+
+        /* ===== NEWSLETTER ===== */
+        .news-letter {
+            width: 100%;
+            height: 160px;
+            background-color: #ffa62b;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .news-area {
+            width: 64%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .news-text>h3 {
+            font-size: 24px;
+            font-weight: 700;
+            color: #3d424a;
+            font-family: Poppins, Arial, sans-serif;
+        }
+
+        .news-text>p {
+            margin-top: 8px;
+            font-size: 13px;
+            color: #3d424a;
+            font-family: Poppins, Arial, sans-serif;
+        }
+
+        .news-form {
+            display: flex;
+            gap: 8px;
+        }
+
+        .news-form>input {
+            width: 280px;
+            height: 50px;
+            border: none;
+            padding: 0px 16px;
+            font-size: 13px;
+            outline: none;
+            font-family: Poppins, Arial, sans-serif;
+        }
+
+        .news-form>button {
+            height: 50px;
+            padding: 0px 22px;
+            border: none;
+            background-color: #3d424a;
+            color: #fff;
+            font-size: 12px;
+            font-weight: 700;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            cursor: pointer;
+            font-family: Poppins, Arial, sans-serif;
+            transition: all 0.3s ease-in;
+        }
+
+        .news-form>button:hover {
+            background-color: #fff;
+            color: #3d424a;
+        }
+
+        /* ===== FOOTER ===== */
+        .footer {
+            width: 100%;
+            padding: 90px 0px 70px;
+            background-color: #363b42;
+            display: flex;
+            justify-content: center;
+        }
+
+        .footer-area {
+            width: 64%;
+            display: flex;
+            justify-content: space-between;
+            gap: 30px;
+        }
+
+        .footer-about {
+            width: 28%;
+        }
+
+        .footer-posts {
+            width: 28%;
+        }
+
+        .footer-links {
+            width: 16%;
+        }
+
+        .footer-contact {
+            width: 22%;
+        }
+
+        .footer-area h3 {
+            margin-bottom: 28px;
+            font-size: 16px;
+            font-weight: 700;
+            color: #fff;
+            font-family: Poppins, Arial, sans-serif;
+        }
+
+        .footer-about>p {
+            font-size: 13px;
+            line-height: 1.9;
+            color: rgba(255, 255, 255, 0.7);
+            font-family: Poppins, Arial, sans-serif;
+        }
+
+        .footer-social {
+            margin-top: 25px;
+            display: flex;
+            gap: 10px;
+        }
+
+        .footer-social>li {
+            list-style: none;
+        }
+
+        .footer-social>li>a {
+            width: 32px;
+            height: 32px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #ffffff0d;
+            color: #ffa62b;
+            text-decoration: none;
+            font-size: 13px;
+            transition: all 0.3s ease-in;
+        }
+
+        .footer-social>li>a:hover {
+            background-color: #6f6c67;
+        }
+
+        /* recent posts */
+        .footer-post {
+            display: flex;
+            gap: 16px;
+            margin-bottom: 22px;
+        }
+
+        .footer-post>img {
+            width: 80px;
+            height: 80px;
+            object-fit: cover;
+        }
+
+        .footer-post>div>h4 {
+            font-size: 14px;
+            font-weight: 500;
+            line-height: 1.5;
+            color: #fff;
+            font-family: Poppins, Arial, sans-serif;
+        }
+
+        .footer-post>div>span {
+            display: flex;
+            gap: 14px;
+            margin-top: 8px;
+            font-size: 11px;
+            font-weight: 600;
+            color: #ffa62b;
+            font-family: Poppins, Arial, sans-serif;
+        }
+
+        .footer-post>div>span>i {
+            margin-right: 4px;
+        }
+
+        /* quick links */
+        .footer-links>ul>li {
+            list-style: none;
+            margin-bottom: 16px;
+        }
+
+        .footer-links>ul>li>a {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            text-decoration: none;
+            font-size: 13px;
+            color: #fff;
+            font-family: Poppins, Arial, sans-serif;
+            transition: all 0.3s ease-in;
+        }
+
+        .footer-links>ul>li>a>i {
+            font-size: 10px;
+        }
+
+        .footer-links>ul>li>a:hover {
+            color: #ffa62b;
+        }
+
+        /* contact */
+        .footer-contact>ul>li {
+            list-style: none;
+            display: flex;
+            gap: 14px;
+            margin-bottom: 18px;
+            font-size: 13px;
+            line-height: 1.7;
+            color: #fff;
+            font-family: Poppins, Arial, sans-serif;
+        }
+
+        .footer-contact>ul>li>i {
+            color: #ffa62b;
+            margin-top: 4px;
+        }
+
+        /* copyright */
+        .footer-bottom {
+            width: 100%;
+            height: 80px;
+            background-color: #2f343a;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 12px;
+            color: #fff;
+            font-family: Poppins, Arial, sans-serif;
+        }
+
+        .footer-bottom>a {
+            margin-left: 4px;
+            color: #ffa62b;
         }
     </style>
 </head>
@@ -2452,7 +2891,7 @@
                                 <li><span><i class="fa-solid fa-check"></i></span>Custom-timeline</li>
                                 <li><span><i class="fa-solid fa-check"></i></span>10-year warranty</li>
                                 <li><span><i class="fa-solid fa-check"></i></span>Full design team</li>
-                                <li><span><i class="fa-solid fa-check"></i></span>24/7 support  </li>
+                                <li><span><i class="fa-solid fa-check"></i></span>24/7 support </li>
                             </ul>
                         </div>
                         <a href="#" class="btn-quote">contact us</a>
@@ -2582,7 +3021,163 @@
                 </div>
             </div>
         </section>
+        <section class="form">
+            <div class="form-area">
+                <div class="form-top">
+                    <span>Drop a message</span>
+                    <h2>Request a quote</h2>
+                </div>
+                <form>
+                    <div class="formctnt">
+                        <div class="form-t">
+                            <label for="name">your full name</label>
+                            <input type="text" name="name" id="name" placeholder="Your Full Name">
+                        </div>
+                        <div class="form-f">
+                            <label for="user-email">email address</label>
+                            <input type="email" name="email" id="user-email" placeholder="Email">
+                        </div>
+                    </div>
+                    <div class="form-sub">
+                        <label for="subject">select subject</label>
+                        <select name="subject" id="subject">
+                            <option>Construction Services</option>
+                            <option>Architecture</option>
+                            <option>Consulting</option>
+                            <option>Mechanical</option>
+                        </select>
+                    </div>
+                    <div class="form-msg">
+                        <label for="message">message</label>
+                        <textarea name="message" id="message" placeholder="Message"></textarea>
+                    </div>
+                    <button type="submit" class="form-btn">send message</button>
+                </form>
+            </div>
+
+            <div class="form-content-area">
+                <span>Frequently Asked Questions</span>
+                <h2>You Want To Ask Something From Us?</h2>
+                <p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a
+                    paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
+
+                <div class="faq-list">
+                    <details name="faq" open>
+                        <summary>What are the problems in construction? <i class="fa-solid fa-chevron-down"></i>
+                        </summary>
+                        <p>The usual ones are delays, budget overruns and unclear plans. We agree the scope, the
+                            schedule and
+                            a fixed price before work starts, and report progress every week.</p>
+                    </details>
+                    <details name="faq">
+                        <summary>What is best practice in construction? <i class="fa-solid fa-chevron-down"></i>
+                        </summary>
+                        <p>Plan carefully, use quality materials, follow safety rules and keep clear communication with
+                            the
+                            client from start to finish.</p>
+                    </details>
+                    <details name="faq">
+                        <summary>How long does a typical project take? <i class="fa-solid fa-chevron-down"></i>
+                        </summary>
+                        <p>It depends on the size. Small renovations take about two weeks, while full home builds can
+                            take
+                            eight weeks or more.</p>
+                    </details>
+                </div>
+            </div>
+        </section>
+
+        <section class="news-letter">
+            <div class="news-area">
+                <div class="news-text">
+                    <h3>Subscribe to Our Newsletter</h3>
+                    <p>Get the latest updates on projects, industry news, and exclusive offers.</p>
+                </div>
+                <form class="news-form">
+                    <input type="email" placeholder="Enter your email address">
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+        </section>
     </main>
+    <footer>
+        <div class="footer">
+            <div class="footer-area">
+                <div class="footer-about">
+                    <h3>BUILDREAM</h3>
+                    <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.
+                    </p>
+                    <ul class="footer-social">
+                        <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-posts">
+                    <h3>Recent Posts</h3>
+                    <div class="footer-post">
+                        <img src="image/image_1.jpg" alt="post1">
+                        <div>
+                            <h4>Biggest Construction in New York, USA</h4>
+                            <span>
+                                <b><i class="fa-solid fa-user"></i>Admin</b>
+                                <b><i class="fa-solid fa-comment"></i>19</b>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="footer-post">
+                        <img src="image/image_2.jpg" alt="post2">
+                        <div>
+                            <h4>Biggest Construction in New York, USA</h4>
+                            <span>
+                                <b><i class="fa-solid fa-user"></i>Admin</b>
+                                <b><i class="fa-solid fa-comment"></i>19</b>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="footer-post">
+                        <img src="image/image_3.jpg" alt="post3">
+                        <div>
+                            <h4>Biggest Construction in New York, USA</h4>
+                            <span>
+                                <b><i class="fa-solid fa-user"></i>Admin</b>
+                                <b><i class="fa-solid fa-comment"></i>19</b>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#"><i class="fa-solid fa-chevron-right"></i>Home</a></li>
+                        <li><a href="#"><i class="fa-solid fa-chevron-right"></i>About</a></li>
+                        <li><a href="#"><i class="fa-solid fa-chevron-right"></i>Services</a></li>
+                        <li><a href="#"><i class="fa-solid fa-chevron-right"></i>Project</a></li>
+                        <li><a href="#"><i class="fa-solid fa-chevron-right"></i>Pricing</a></li>
+                        <li><a href="#"><i class="fa-solid fa-chevron-right"></i>Contact Us</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-contact">
+                    <h3>Have a Question?</h3>
+                    <ul>
+                        <li><i class="fa-solid fa-location-dot"></i>203 Fake St. Mountain View, San Francisco,
+                            California,
+                            USA</li>
+                        <li><i class="fa-solid fa-phone"></i>+1 415 555 0142</li>
+                        <li><i class="fa-solid fa-paper-plane"></i>info@example.com</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            Copyright &copy;2026 All rights reserved | This template is made with
+            <i class="fa-solid fa-heart" style="color: #ffa62b; margin: 0px 5px;"></i> by <a href="#">Colorlib</a>
+        </div>
+    </footer>
 </body>
 
 </html>
